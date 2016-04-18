@@ -1,8 +1,12 @@
-var heslo = document.getElementById("heslo").value;   //načtení hodnoty z inputu
+//načtení hodnoty z inputu
+
 function login(heslo) {
- if (heslo == "1234"){
-  window.location.replace("interface.html")
- }
-
-
+    var heslo = document.getElementById("heslo").value;
+    if (heslo == "1234") {
+        alert("Správně");
+    }
+    else {
+        alert("Špatně");
+    }
+    return 0;
 }
