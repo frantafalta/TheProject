@@ -10,7 +10,7 @@
 <body>
 
 <!-- javascript  !-->
-
+<script type="text/javascript" src="md5.js"></script>
 <script type="text/javascript" src="login.js"></script>
 
     <!-- elementy na stránce !-->
@@ -19,16 +19,12 @@ The Project
 </div>
 
 <div id="login">    <!-- Přihlašovací formulář !-->
-<form>
-Zadej heslo:<br>
-<input type="password" id="heslo" >
-<br>
-<input type="button" onclick="login(heslo)" id="prihlasit" value="Přihlásit">
-</form>
-    
+<input type="password" id="heslo" placeholder="Heslo" autofocus >
+<input type="button" onclick="login(heslo)" id="prihlasit" value="Přihlásit">   
 
 
 </div>
+<div id="error"></div>
 
 
 </body>
