@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 
 <head>
@@ -9,6 +9,11 @@
 </head>
 <body>
 
+<!-- javascript  !-->
+
+<script type="text/javascript" src="login.js"></script>
+
+    <!-- elementy na stránce !-->
 <div id="nadpis">   <!-- Nadpis na stránce !-->
 The Project
 </div>
@@ -16,12 +21,12 @@ The Project
 <div id="login">    <!-- Přihlašovací formulář !-->
 <form>
 Zadej heslo:<br>
-<input type="password" id="heslo">
+<input type="password" id="heslo" >
 <br>
-<input type="button" value="Přihlásit">
+<input type="button" onclick="login(heslo)" id="prihlasit" value="Přihlásit">
 </form>
+    
 
-<script type="javascript" src="login.js"></script>      <!-- Vložení javascriptu !-->
 
 </div>
 
