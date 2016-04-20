@@ -1,13 +1,6 @@
 //ověření správnosti hesla
 function login(heslo) {
     var heslo = document.getElementById("heslo").value;  //zjistí hodnotu hesla
-    //var heslo2 = MD5(heslo);
-    
-    var i = 0;
-    // prohledání databáze
-    for (i = 0; users[i]["password"] != heslo; ++i);
-
-    window.location.replace("interface.html");
     
         // výpis chyby při zadání špatného hesla
    /*
@@ -22,4 +15,13 @@ function login(heslo) {
         node.appendChild(message);*/
      
     return users[i];
+
+    if (heslo == "1234") {
+        window.location.replace("interface.html");
+    }
+    else {
+        alert("Špatně");
+    }
+    return 0;
+
 }
